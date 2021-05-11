@@ -161,7 +161,7 @@ main {
 
 .photo-gallery-container {
   max-width: 1000px;
-  margin-top: 160px;
+  margin-top: 140px;
   width: 80%;
 }
 
@@ -215,6 +215,93 @@ img {
   opacity: 80%;
   background-color: var(--clr-light-pink);
   color: var(--clr-dark-grey);
+}
+
+/* Art Page Classes*/
+
+.art-gallery {
+  margin-top: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10%;
+}
+
+.filter-container {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.filter-btn {
+  font-family: var(--font-primary);
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: var(--clr-light-pink);
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.filter-btn:hover {
+  background-color: var(--clr-light-grey);
+  box-shadow: var(--light-shadow);
+}
+
+.filter-btn.active {
+  background-color: var(--clr-dark-grey);
+  color: white;
+}
+
+.painting-container {
+  display: flex;
+  flex-direction: column;
+  flex: 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.painting-container img {
+  margin-top: 8px;
+}
+
+.painting-container p {
+  width: 100%;
+  padding: 0 10px 10px 10px;
+  background-color: var(--clr-beige);
+}
+
+/* Projects Classes */
+
+.accordion-container {
+  width: 80%;
+  max-width: 900px;
+  margin-top: 130px;
+}
+
+.accordion {
+  background-color: var(--clr-light-pink);
+  font-family: var(--font-primary);
+  font-size: 16px;
+  color: var(--clr-dark-grey);
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: 10px 0;
+}
+
+.active, .accordion:hover {
+  background-color: var(--clr-beige);
+}
+
+.acc-content {
+  padding: 20px;
+  background-color: var(--clr-light-pink);
+  display: none;
+  overflow: hidden;
 }
 
 /* Navbar */
@@ -337,6 +424,27 @@ nav {
       font-size: 1.2rem;
   }
 
+  .filter-btn {
+    font-family: var(--font-primary);
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 15px 19px;
+    background-color: var(--clr-light-pink);
+    cursor: pointer;
+  }
+
+  .painting-container {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 20px;
+  }
+
+  .painting-container p {
+    width: 100%;
+    background-color: var(--clr-beige);
+  }
+
   .photo-gallery-container {
     max-width: 1000px;
     margin-top: 140px;
@@ -351,5 +459,9 @@ nav {
   .prev, .next {
     font-size: 22px;
     padding: 15px;
+  }
+
+  .accordion {
+    font-size: 20px;
   }
 }
